@@ -6,9 +6,11 @@ import {
   makeStyles, 
   Paper, 
   Container,
-  Grid
+  Grid,
+  Box
  } from '@material-ui/core'
- import RecipeReviewCard from './Card'
+ import RecipeReviewCard from './components/Card'
+ import NavBar from './components/Navbar'
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -23,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
     gridTemplateColumns: '1fr 1fr 1fr',
     alignItems: 'center',
     justifyItems: 'center',
-    gridGap: '10px',
+    gridGap: '20px',
     padding: '10px'
   }
 }))
@@ -41,10 +43,11 @@ function App() {
     <React.Fragment>
       <CssBaseline />
       {/* The rest of your application */}
+      <NavBar/>
       <div className={classes.cardsLayout}>
-      {cardsLayout}
-        </div>
-         </React.Fragment>
+        {cardsLayout}
+      </div>
+    </React.Fragment>
     </div>
   );
 }
