@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
   },
   cardsLayout: {
     display: 'grid',
-    gridTemplateColumns: '1fr 1fr 1fr',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(428px, 2fr));',
     alignItems: 'center',
     justifyItems: 'center',
     gridGap: '20px',
